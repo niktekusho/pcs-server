@@ -3,9 +3,20 @@
   "version": "1.0.0",
   "description": "TODO",
   "main": "index.js",
+  "private": true,
   "scripts": {
+    "lint": "xo",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nicola Dal Maso",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.15.4",
+    "helmet": "^3.8.1",
+    "xo": "^0.18.2"
+  },
+  "engines": {
+    "node" : ">=6.11.2"
+  }
 }
