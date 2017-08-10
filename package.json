@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "xo",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo"
   },
   "author": "Nicola Dal Maso",
   "license": "GPL-3.0",
@@ -18,5 +18,10 @@
   },
   "engines": {
     "node" : ">=6.11.2"
+  },
+  "xo": {
+    "rules": {
+      "linebreak-style": 0
+    }
   }
 }
