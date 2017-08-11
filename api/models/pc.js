@@ -26,7 +26,7 @@ const ComputerSchema = new Schema({
 	},
 	diskLayout: [
 		{
-			type: String,
+			type: {type: String},
 			name: String,
 			vendor: String,
 			size: Number,
@@ -65,7 +65,7 @@ const ComputerSchema = new Schema({
 		{
 			size: Number,
 			bank: String,
-			type: String,
+			type: {type: String},
 			clockSpeed: Number,
 			formFactor: String,
 			partNum: String,
@@ -98,7 +98,10 @@ const ComputerSchema = new Schema({
 		manufacturer: String,
 		model: String,
 		serial: String,
-		uuid: String
+		uuid: {
+			type: String,
+			unique: true
+		}
 	},
 	versions: {
 		kernel: String,
